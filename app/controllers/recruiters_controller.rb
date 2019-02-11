@@ -49,6 +49,6 @@ class RecruitersController < ApplicationController
   private
   
   def recruiter_params
-    params.permit(:name, :team)
+    params.require(:recruiter).permit(:name, :team)
   end
 end

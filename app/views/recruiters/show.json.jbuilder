@@ -1,1 +1,1 @@
-json.extract! @recruiter, :name, :team
+json.extract! @recruiter, :id, :name, :team

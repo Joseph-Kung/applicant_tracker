@@ -1,6 +1,6 @@
 import * as recruiterUtil from '../../util/recruiter_api_util';
 
-export const RECEIVE_RECRUITERS;
+export const RECEIVE_RECRUITERS = 'RECEIVE_RECRUITERS';
 
 const receiveRecruiters = recruiters => ({
   type: RECEIVE_RECRUITERS,

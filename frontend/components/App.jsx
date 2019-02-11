@@ -1,9 +1,10 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import RecruitersContainer from './recruiters/recruiter_index_container';
 
 const App = () => (
   <>
-    <h1>Hello World!</h1>
+    <Route path='/' component={RecruitersContainer} />
   </>
 )
 

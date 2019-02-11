@@ -3,4 +3,4 @@ export const fetchRecruiters = () => (
     method: 'GET',
     url: '/recruiters',
   })
-)
+);

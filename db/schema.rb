@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2019_02_12_185139) do
     t.string "position", null: false
     t.string "status", null: false
     t.string "location", null: false
-    t.string "type", null: false
+    t.string "method", null: false
     t.date "date"
     t.boolean "traveling", null: false
     t.datetime "created_at", null: false

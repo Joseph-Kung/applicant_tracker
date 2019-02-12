@@ -1,6 +1,6 @@
 class ApplicantsController < ApplicationController
   def index
-    @applicants = Applicant.find(params[:recruiter_id])
+    @applicants = Applicant.all
     render :index
   end
 
@@ -21,7 +21,7 @@ class ApplicantsController < ApplicationController
     if @applicant.update_attributes(applicant_params)
       render :show
     else
-      render @applicant.errors.full_messages, status: 400
+      render json: @applicant.errors.full_messages, status: 400
     end
   end
 
@@ -31,13 +31,13 @@ class ApplicantsController < ApplicationController
     if @applicant.save
       render :show
     else
-      render @applicant.errors.full_messages, status: 400
+      render json: @applicant.errors.full_messages, status: 400
     end
   end
 
   private
 
   def applicant_params
-    params.require(:applicant).permit(:recruiter_id, :name, :position, :status, :location. :type, :date, :traveling)
+    params.permit(:recruiter_id, :name, :position, :status, :location, :method, :date, :traveling)
   end
 end

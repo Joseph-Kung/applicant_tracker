@@ -6,7 +6,7 @@ class CreateApplicant < ActiveRecord::Migration[5.2]
       t.string :position, null: false
       t.string :status, null: false
       t.string :location, null: false
-      t.string :type, null: false
+      t.string :method, null: false
       t.date :date
       t.boolean :traveling, null: false
 

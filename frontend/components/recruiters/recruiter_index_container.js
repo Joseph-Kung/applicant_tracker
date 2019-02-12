@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { fetchRecruiters, deleteRecruiter, createRecruiter } from '../../actions/recruiter/recruiter_actions';
+import { fetchApplicants } from '../../actions/applicant/applicant_actions';
 import recruiterIndex from './recruiter_index';
 
 const mapStateToProps = state => ({

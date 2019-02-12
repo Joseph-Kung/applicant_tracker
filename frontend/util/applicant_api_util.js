@@ -1,7 +1,7 @@
 export const fetchApplicants = recruiterId => (
   $.ajax({
     method: 'GET',
-    url: ` /recruiters/${recruiterId}/applicants`,
+    url: `/applicants`,
   })
 );
 

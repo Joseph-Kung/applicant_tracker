@@ -1,4 +1,5 @@
 import React from 'react';
+import RecruiterShow from './recruiter_show';
 
 class recruiterIndex extends React.Component {
   constructor(props) {
@@ -15,6 +16,7 @@ class recruiterIndex extends React.Component {
 
   componentDidMount() {
     this.props.fetchRecruiters();
+    this.props.fetchApplicants();
   }
 
   handleChange(e) {
@@ -35,12 +37,8 @@ class recruiterIndex extends React.Component {
     this.props.deleteRecruiter(id);
   }
 
-  
-
-
-
   render() {
-    const recruiters = this.props.recruiters.map(recruiter => <><div key={recruiter.id}>{recruiter.name} - {recruiter.team}</div><div key={recruiter.name} onClick={(e) => this.handleDelete(recruiter.id)}>X</div></>)
+    const recruiters = this.props.recruiters.map(recruiter => <RecruiterShow key={recruiter.id} recruiter={recruiter} deleteRecruiter={this.deleteRecruiter} />)
     return (
       <>
         <h1>Recruiters</h1>

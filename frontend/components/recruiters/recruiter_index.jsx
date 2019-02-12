@@ -10,6 +10,7 @@ class recruiterIndex extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   componentDidMount() {
@@ -24,6 +25,14 @@ class recruiterIndex extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.createRecruiter(this.state);
+    this.setState({
+      name: '',
+      team: '',
+    })
+  }
+
+  handleDelete(id) {
+    this.props.deleteRecruiter(id);
   }
 
   
@@ -31,7 +40,7 @@ class recruiterIndex extends React.Component {
 
 
   render() {
-    const recruiters = this.props.recruiters.map(recruiter => <div key={recruiter.id} >{recruiter.name} - {recruiter.team}</div>)
+    const recruiters = this.props.recruiters.map(recruiter => <><div key={recruiter.id}>{recruiter.name} - {recruiter.team}</div><div key={recruiter.name} onClick={(e) => this.handleDelete(recruiter.id)}>X</div></>)
     return (
       <>
         <h1>Recruiters</h1>
@@ -39,7 +48,6 @@ class recruiterIndex extends React.Component {
 
         <form onSubmit={this.handleSubmit}>
           <input type="text" name='name' onChange={this.handleChange} placeholder="Recruiter name" value={this.state.name}/>
-          {/* <input type="text" name='team' onChange={this.handleChange} placeholder="Team" value={this.state.team}/> */}
           <select name="team" onChange={this.handleChange} value={this.state.team}>
             <option value="" disabled>--Select Team--</option>
             <option value="Engineering">Engineering</option>

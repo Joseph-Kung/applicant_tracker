@@ -20,7 +20,7 @@ class RecruitersController < ApplicationController
     if @recruiter
       render :show
     else
-      render json ['Recruiter does not exit'], status: 400
+      render json: ['Recruiter does not exit'], status: 400
     end
 
   end
@@ -32,7 +32,7 @@ class RecruitersController < ApplicationController
       @recruiter.destroy
       render :show
     else
-      render json ['Recruiter does not exit'], status: 400
+      render json: ['Recruiter does not exit'], status: 400
     end
   end
 

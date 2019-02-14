@@ -4053,3 +4053,380 @@ Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.6ms)
 Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 3.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-12 15:23:39 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 250ms (Views: 248.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 15:23:40 -0800
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 15:23:40 -0800
+Processing by RecruitersController#index as */*
+  Rendering recruiters/index.json.jbuilder
+  [1m[36mRecruiter Load (1.4ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  Rendered recruiters/index.json.jbuilder (7.1ms)
+Completed 200 OK in 34ms (Views: 28.1ms | ActiveRecord: 5.5ms)
+
+
+Processing by ApplicantsController#index as */*
+  Rendering applicants/index.json.jbuilder
+  [1m[36mApplicant Load (1.1ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  ↳ app/views/applicants/index.json.jbuilder:1
+  Rendered applicants/index.json.jbuilder (7.0ms)
+Completed 200 OK in 32ms (Views: 26.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 15:24:12 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 264ms (Views: 262.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 15:24:13 -0800
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 15:24:13 -0800
+Processing by RecruitersController#index as */*
+Processing by ApplicantsController#index as */*
+  Rendering recruiters/index.json.jbuilder
+  Rendering applicants/index.json.jbuilder
+  [1m[36mRecruiter Load (4.7ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  [1m[36mApplicant Load (0.4ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  ↳ app/views/applicants/index.json.jbuilder:1
+  Rendered applicants/index.json.jbuilder (1.5ms)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.4ms)
+
+
+  Rendered recruiters/index.json.jbuilder (10.7ms)
+Completed 200 OK in 58ms (Views: 48.2ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 15:25:07 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 255ms (Views: 253.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 15:25:08 -0800
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 15:25:08 -0800
+Processing by RecruitersController#index as */*
+Processing by ApplicantsController#index as */*
+  Rendering recruiters/index.json.jbuilder
+  Rendering applicants/index.json.jbuilder
+  [1m[36mRecruiter Load (4.8ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  Rendered recruiters/index.json.jbuilder (6.3ms)
+Completed 200 OK in 54ms (Views: 48.4ms | ActiveRecord: 4.8ms)
+
+
+  [1m[36mApplicant Load (1.0ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  ↳ app/views/applicants/index.json.jbuilder:1
+  Rendered applicants/index.json.jbuilder (5.5ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 15:25:22 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 249ms (Views: 247.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 15:25:23 -0800
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 15:25:23 -0800
+Processing by RecruitersController#index as */*
+Processing by ApplicantsController#index as */*
+  Rendering recruiters/index.json.jbuilder
+  Rendering applicants/index.json.jbuilder
+  [1m[36mRecruiter Load (1.1ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  [1m[36mApplicant Load (0.3ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  ↳ app/views/applicants/index.json.jbuilder:1
+  Rendered applicants/index.json.jbuilder (1.5ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+  Rendered recruiters/index.json.jbuilder (4.0ms)
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 15:26:15 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 264ms (Views: 262.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 15:26:16 -0800
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 15:26:16 -0800
+Processing by RecruitersController#index as */*
+Processing by ApplicantsController#index as */*
+  Rendering recruiters/index.json.jbuilder
+  Rendering applicants/index.json.jbuilder
+  [1m[36mApplicant Load (0.4ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  ↳ app/views/applicants/index.json.jbuilder:1
+  Rendered applicants/index.json.jbuilder (1.7ms)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mRecruiter Load (4.8ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  Rendered recruiters/index.json.jbuilder (7.9ms)
+Completed 200 OK in 53ms (Views: 48.1ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 15:27:11 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 298ms (Views: 296.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 15:27:12 -0800
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 15:27:12 -0800
+Processing by ApplicantsController#index as */*
+  Rendering applicants/index.json.jbuilder
+Processing by RecruitersController#index as */*
+  Rendering recruiters/index.json.jbuilder
+  [1m[36mApplicant Load (25.7ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  ↳ app/views/applicants/index.json.jbuilder:1
+  [1m[36mRecruiter Load (0.6ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  Rendered recruiters/index.json.jbuilder (2.1ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.6ms)
+
+
+  Rendered applicants/index.json.jbuilder (29.3ms)
+Completed 200 OK in 52ms (Views: 23.9ms | ActiveRecord: 27.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 15:28:21 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 15:28:22 -0800
+Processing by RecruitersController#index as */*
+  Rendering recruiters/index.json.jbuilder
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 15:28:22 -0800
+  [1m[36mRecruiter Load (1.0ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  Rendered recruiters/index.json.jbuilder (2.6ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 1.0ms)
+
+
+Processing by ApplicantsController#index as */*
+  Rendering applicants/index.json.jbuilder
+  [1m[36mApplicant Load (0.8ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  ↳ app/views/applicants/index.json.jbuilder:1
+  Rendered applicants/index.json.jbuilder (1.8ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 15:28:31 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 15:28:32 -0800
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 15:28:32 -0800
+Processing by RecruitersController#index as */*
+Processing by ApplicantsController#index as */*
+  Rendering recruiters/index.json.jbuilder
+  Rendering applicants/index.json.jbuilder
+  [1m[36mRecruiter Load (3.1ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  Rendered recruiters/index.json.jbuilder (4.7ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 3.1ms)
+
+
+  [1m[36mApplicant Load (1.5ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  ↳ app/views/applicants/index.json.jbuilder:1
+  Rendered applicants/index.json.jbuilder (2.6ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 15:28:54 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 263ms (Views: 261.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 15:28:55 -0800
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 15:28:55 -0800
+Processing by RecruitersController#index as */*
+Processing by ApplicantsController#index as */*
+  Rendering applicants/index.json.jbuilder
+  Rendering recruiters/index.json.jbuilder
+  [1m[36mApplicant Load (3.7ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  ↳ app/views/applicants/index.json.jbuilder:1
+  [1m[36mRecruiter Load (0.3ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  Rendered recruiters/index.json.jbuilder (1.9ms)
+  Rendered applicants/index.json.jbuilder (5.8ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.3ms)
+
+
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 15:30:23 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 247ms (Views: 245.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 15:30:48 -0800
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 15:30:48 -0800
+Processing by RecruitersController#index as */*
+Processing by ApplicantsController#index as */*
+  Rendering recruiters/index.json.jbuilder
+  Rendering applicants/index.json.jbuilder
+  [1m[36mRecruiter Load (4.3ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  Rendered recruiters/index.json.jbuilder (6.4ms)
+  [1m[36mApplicant Load (1.0ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+Completed 200 OK in 60ms (Views: 55.3ms | ActiveRecord: 4.3ms)
+
+
+  ↳ app/views/applicants/index.json.jbuilder:1
+  Rendered applicants/index.json.jbuilder (3.6ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 16:11:37 -0800
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/josephkung/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 901ms (Views: 891.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 16:11:39 -0800
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 16:11:39 -0800
+Processing by RecruitersController#index as */*
+  Rendering recruiters/index.json.jbuilder
+  [1m[36mRecruiter Load (2.8ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+Processing by ApplicantsController#index as */*
+  Rendered recruiters/index.json.jbuilder (51.1ms)
+Completed 200 OK in 93ms (Views: 44.4ms | ActiveRecord: 42.9ms)
+
+
+  Rendering applicants/index.json.jbuilder
+  [1m[36mApplicant Load (7.0ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  ↳ app/views/applicants/index.json.jbuilder:1
+  Rendered applicants/index.json.jbuilder (26.6ms)
+Completed 200 OK in 69ms (Views: 47.8ms | ActiveRecord: 17.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 16:11:49 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 16:11:49 -0800
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 16:11:49 -0800
+Processing by RecruitersController#index as */*
+Processing by ApplicantsController#index as */*
+  Rendering recruiters/index.json.jbuilder
+  Rendering applicants/index.json.jbuilder
+  [1m[36mRecruiter Load (4.6ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  [1m[36mApplicant Load (0.7ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  ↳ app/views/applicants/index.json.jbuilder:1
+  Rendered recruiters/index.json.jbuilder (7.4ms)
+Completed 200 OK in 52ms (Views: 44.9ms | ActiveRecord: 6.3ms)
+
+
+  Rendered applicants/index.json.jbuilder (4.4ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 16:11:53 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 16:11:53 -0800
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 16:11:53 -0800
+Processing by ApplicantsController#index as */*
+Processing by RecruitersController#index as */*
+  Rendering applicants/index.json.jbuilder
+  Rendering recruiters/index.json.jbuilder
+  [1m[36mApplicant Load (3.7ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  ↳ app/views/applicants/index.json.jbuilder:1
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  Rendered recruiters/index.json.jbuilder (1.5ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+  Rendered applicants/index.json.jbuilder (8.9ms)
+Completed 200 OK in 50ms (Views: 42.2ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 16:12:32 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 254ms (Views: 252.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 16:12:33 -0800
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 16:12:33 -0800
+Processing by RecruitersController#index as */*
+  Rendering recruiters/index.json.jbuilder
+Processing by ApplicantsController#index as */*
+  [1m[36mRecruiter Load (18.3ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  Rendering applicants/index.json.jbuilder
+  Rendered recruiters/index.json.jbuilder (23.6ms)
+Completed 200 OK in 48ms (Views: 25.7ms | ActiveRecord: 22.0ms)
+
+
+  [1m[36mApplicant Load (1.1ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  ↳ app/views/applicants/index.json.jbuilder:1
+  Rendered applicants/index.json.jbuilder (2.8ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 16:12:57 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 254ms (Views: 252.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters" for 127.0.0.1 at 2019-02-12 16:12:58 -0800
+Started GET "/applicants" for 127.0.0.1 at 2019-02-12 16:12:58 -0800
+Processing by RecruitersController#index as */*
+Processing by ApplicantsController#index as */*
+  Rendering recruiters/index.json.jbuilder
+  Rendering applicants/index.json.jbuilder
+  [1m[36mRecruiter Load (4.4ms)[0m  [1m[34mSELECT "recruiters".* FROM "recruiters"[0m
+  ↳ app/views/recruiters/index.json.jbuilder:1
+  [1m[36mApplicant Load (0.5ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants"[0m
+  Rendered recruiters/index.json.jbuilder (5.7ms)
+Completed 200 OK in 49ms (Views: 44.7ms | ActiveRecord: 4.4ms)
+
+
+  ↳ app/views/applicants/index.json.jbuilder:1
+  Rendered applicants/index.json.jbuilder (2.8ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.5ms)
+
+

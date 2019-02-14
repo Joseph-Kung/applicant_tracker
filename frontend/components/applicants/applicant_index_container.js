@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { deleteApplicant, updateApplicant, createApplicant } from '../../util/applicant_api_util';
 import { create } from 'domain';
-import applicantShow from './applicant_show';
+import applicantIndex from './applicant_index';
 
 const mapDipsatchToProps = dispatch => ({
   deleteApplicant: id => dispatch(deleteApplicant(id)),
@@ -9,4 +9,4 @@ const mapDipsatchToProps = dispatch => ({
   createApplicant: applicant => dispatch(createApplicant(applicant))
 });
 
-export default connect(null, mapDipsatchToProps)(applicantShow);
+export default connect(null, mapDipsatchToProps)(applicantIndex);

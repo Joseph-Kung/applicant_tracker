@@ -8,7 +8,7 @@ class RecruiterShow extends React.Component {
     this.handleDelete = this.handleDelete.bind(this);
   }
 
-  handleDelete() {
+  handleDelete(id) {
     this.props.deleteRecruiter(id);
   }
 

@@ -38,7 +38,10 @@ class recruiterIndex extends React.Component {
   }
 
   render() {
-    const recruiters = this.props.recruiters.map(recruiter => <RecruiterShow key={recruiter.id} applicants={this.props.applicants} recruiter={recruiter} deleteRecruiter={this.props.deleteRecruiter} />)
+    const recruiters = this.props.recruiters.map(recruiter => 
+      <RecruiterShow key={recruiter.id} applicants={this.props.applicants} recruiter={recruiter} deleteRecruiter={this.props.deleteRecruiter} 
+      />)
+
     return (
       <>
         <h1>Recruiters</h1>

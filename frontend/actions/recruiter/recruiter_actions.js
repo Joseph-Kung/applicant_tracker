@@ -33,3 +33,8 @@ export const deleteRecruiter = recruiterId => dispatch => (
   recruiterUtil.deleteRecruiter(recruiterId)
     .then(recruiter => dispatch(removeRecruiter(recruiter.id)))
 )
+
+export const updateRecruiter = recruiterId => dispatch => (
+  recruiterUtil.updateRecruiter(recruiterId)
+    .then(recruiter => dispatch(receiveRecruiter(recruiter)))
+)

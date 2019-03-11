@@ -42,7 +42,7 @@ class RecruitersController < ApplicationController
     if @recruiter.update_attributes(recruiter_params)
       render :show
     else
-      render json ['Recruiter does not exit'], status: 400
+      render json: ['Recruiter does not exit'], status: 400
     end
   end
 

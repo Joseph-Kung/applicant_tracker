@@ -18,4 +18,11 @@ export const deleteRecruiter = recruiterId => (
     method: 'DELETE',
     url: `/recruiters/${recruiterId}`
   })
-)
+);
+
+export const updateRecruiter = recruiterId => (
+  $.ajax({
+    method: 'PATCH',
+    url: `/recruiters/${recruiterId}`
+  })
+);
